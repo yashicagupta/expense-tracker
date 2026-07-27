@@ -23,7 +23,8 @@ def add_expense(name, category, amount, date):
 def view_expenses():
     # shows all expenses
     if not expenses:
-        return "no expenses found"
+        print("no expenses found")
+        return
 
     for expense in expenses:
         print(
@@ -35,3 +36,13 @@ def view_expenses():
             "|",
             expense["date"]
         )
+
+
+def get_total():
+    # calculates total spending
+    total = 0
+
+    for expense in expenses:
+        total += expense["amount"]
+
+    return total

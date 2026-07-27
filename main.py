@@ -1,4 +1,4 @@
-from expenses import add_expense, view_expenses
+from expenses import add_expense, view_expenses, get_total
 
 
 def main():
@@ -27,6 +27,8 @@ def main():
 
     print("\ncurrent expenses:")
     view_expenses()
+
+    print("\ntotal spending: $" + str(get_total()))
 
 
 main()
