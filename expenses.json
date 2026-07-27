@@ -1,8 +1,1 @@
-[
-  {
-    "name": "coffee",
-    "category": "food",
-    "amount": 5.0,
-    "date": "2026-07-27"
-  }
-]
+[{"name": "coffee", "category": "food", "amount": 5.0, "date": "2026-07-27"}, {"name": "coffee", "category": "food", "amount": 5.0, "date": "2026-07-27"}]
