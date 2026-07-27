@@ -1,16 +1,17 @@
-from expenses import add_expense
+from expenses import add_expense, view_expenses
 
 
 def main():
-    # gets expense details from user
+    # adds an expense
     name = input("enter expense name: ")
     category = input("enter category: ")
     amount = float(input("enter amount: "))
     date = input("enter date: ")
 
-    expense = add_expense(name, category, amount, date)
+    add_expense(name, category, amount, date)
 
-    print("expense added:", expense)
+    print("\ncurrent expenses:")
+    view_expenses()
 
 
 main()
