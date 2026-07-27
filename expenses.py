@@ -1,4 +1,6 @@
-expenses = []
+from storage import load_expenses, save_expenses
+
+expenses = load_expenses()
 
 
 def add_expense(name, category, amount, date):
@@ -11,6 +13,9 @@ def add_expense(name, category, amount, date):
     }
 
     expenses.append(expense)
+
+    # saves the expense
+    save_expenses(expenses)
 
     return expense
 
